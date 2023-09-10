@@ -5,8 +5,15 @@ return {
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
-    signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    signcolumn = "yes", -- sets vim.opt.signcolumn to auto
+    cursorline = false,
+    preserveindent = true, -- Preserve indent structure as much as possible
+    shiftwidth = 4,
+    tabstop = 4,
+    swapfile = false, -- Disable use of swapfile for the buffer
+    termguicolors = true, -- Enable 24-bit RGB color in the TUI
+    wrap = true, -- sets vim.opt.wrap
+    writebackup = false, -- Disable making a backup before overwriting a file
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -17,6 +24,7 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+    inlay_hints_enabled = true, -- enable or disable LSP inlay hints on startup (Neovim v0.10 only)
   },
 }
 -- If you need more control, you can use the function()...end notation
