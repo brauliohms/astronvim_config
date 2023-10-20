@@ -14,6 +14,14 @@ return {
     termguicolors = true, -- Enable 24-bit RGB color in the TUI
     wrap = true, -- sets vim.opt.wrap
     writebackup = false, -- Disable making a backup before overwriting a file
+    list = true, -- Ativa o listchars abaixo
+    listchars = {
+      tab = "▸-", -- Define o caractere usado para representar tabulações
+      trail = "~", -- Define o caractere usado para representar espaços em branco ao final de uma linha
+      extends = ">", -- Define o caractere usado para representar a continuação de linhas longas
+      precedes = "<", -- Define o caractere usado para representar a linha que precede uma linha longa
+      eol = "↵", -- Adiciona o caractere '↵' na última linha do arquivo
+    },
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
